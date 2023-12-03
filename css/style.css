@@ -51,7 +51,6 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 0.2rem;
-    position: relative;
 }
 
 .navitem{
@@ -66,6 +65,8 @@
     color: #5228F5;
     font-weight: 600;
 }
+
+
 
 
 /* =================
@@ -149,11 +150,24 @@
 
 }
 
-.fa-bars{
-    display: none;
+
+
+.hamburger__menu,
+.hamburger__close{
+    display: none !important;
 }
 
+
 @media  screen and (max-width:768px) {
+    .hamburger__menu,
+.hamburger__close{
+    display: block !important;
+}
+
+
+    .navList__container.show {
+        display: flex;
+    }
 
 .navbar__container .logo h2{
     font-size: 18px;
@@ -167,7 +181,9 @@
     }
     .navList__container{
         display: none;
-        display: block;
+        flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
         width: 96%;
         background: #fff;
         height: 500px;
