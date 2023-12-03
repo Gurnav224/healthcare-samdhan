@@ -82,15 +82,13 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-
+   gap: 1.2rem;
 }
 
 .hero__container .main__heading{
     font-size: 5rem;
    font-weight: 700;
    color: #fff;
-   
-
 }
 
 .hero__container .tagline {
@@ -106,12 +104,13 @@
 .hero__container .description{
     color: #fff;
     font-size: 1.5rem;
-    line-height: 2;
 }
 
 .hero__btn__container{
     margin-top: 1rem;
 }
+
+
 
 .primary__btn{
     background-color: #291477;
@@ -123,21 +122,35 @@
     cursor: pointer;
 }
 
-.fa-bars{
-    display: none;
+.primary__btn:hover{
+    background-color: #6c4aeacb;
+    transition: color 4s ease;
 }
+
+
+
+
 .secondary__btn{
     background-color: transparent;
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border: none;
     padding: 1rem 2rem;
     border-radius: 2rem;
-    border: 1px solid #fff;
     cursor: pointer;
+    border: 1px solid #fff;
+
 }
 
+.secondary__btn:hover{
+    border: 1px solid #291477;
+    color: #291477;
 
+}
+
+.fa-bars{
+    display: none;
+}
 
 @media  screen and (max-width:768px) {
 
