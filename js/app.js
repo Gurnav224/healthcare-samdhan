@@ -4,6 +4,7 @@ const hamburgerClose = document.querySelector(".hamburger__close");
 
 hamburgerMenu.addEventListener("click", () => {
     // Toggle the "show" class on the navListContainer
+    
     navListContainer.classList.toggle("show");
 });
 
