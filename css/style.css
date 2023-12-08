@@ -15,7 +15,7 @@ body {
   left: 0;
   width: 100%;
   min-height: 15vh;
-  background-color: #5228f5;
+  background-color: #6C63FF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@ body {
 .navitem .navlink {
   font-size: 1.3rem;
   text-decoration: none;
-  color: #5228f5;
+  color: #6C63FF;
   font-weight: 600;
 }
 
@@ -67,7 +67,7 @@ body {
 .hero__container {
   width: 100%;
   height: 100vh;
-  background-color: #5228f5;
+  background-color: #6C63FF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,7 +99,7 @@ body {
 }
 
 .primary__btn {
-  background-color: #0f023f;
+  background-color: #4037ef;
   color: #fff;
   font-size: 1.8rem;
   border: none;
@@ -210,6 +210,7 @@ body {
 
 .section__features__and__services h2{
   font-size: 3rem;
+  padding: 2%;
 }
 
 .feature__card__container{
@@ -227,7 +228,7 @@ body {
 .feature__card {
   width: 45%;
 
-  background-color:#949ea7db;
+  background-color:#dbe5ecdb;
    height: 600px;
   border-radius: 2rem;
   margin: 2rem 0;
@@ -254,8 +255,117 @@ body {
    padding: 2rem 0;
 }
 
+/* =================
+     customer__suppport__and__expert__assistance
+   =================
+ */
+.customer__suppport__and__expert__assistance{
+  width: 100%;
+  height: 100vh;
+}
+
+.customer__support,
+.expert__assitance{
+  display: flex;
+  width: 100%;
+  height: 40%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.customer__support svg,
+.expert__assitance svg{
+  width: 40%;
+  height: 100%;
+}
 
 
+
+.customer__support__text,
+.expert__assitance__text{
+  width: 40%;
+  padding: 1rem 2rem;
+}
+
+.customer__support__text h3,
+.expert__assitance__text h3{
+  font-size: 2rem;
+  color: #6C63FF;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.customer__support__text p,
+.expert__assitance__text p{
+  font-size: 1.5rem;
+  color: gray;
+  line-height: 1.3;
+}
+
+
+/* =================
+     Our Team Section
+   =================
+ */
+.section__our__team{
+  width: 100%;
+  height: fit-content;
+  background-color: #e1d8d8;
+}
+
+.section__our__team h2{
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-transform: capitalize;
+  color: #4037ef;
+  font-weight: 600;
+  text-align: center;
+}
+
+.our__team__container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.team__member_card{
+  background-color: #ccc;
+  width: 30%;
+  text-align: center;
+  margin: 2rem 0;
+  border-radius: 2rem;
+}
+
+.team__member_card img{
+  width: 250px;
+  height: 250px;
+  object-position: top;
+  border-radius: 100%;
+  padding: 1rem 0;
+}
+.social{
+  margin: 2rem 0;
+}
+.social a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+.social i{
+  margin: 1rem 0.5rem;
+  background-color: #5228f5;
+padding: 1rem ;
+border-radius: 1rem;
+}
+
+.social i:hover{
+  color: #5228f5;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
 /* Mobile Css */
 
 @media screen and (max-width: 768px) {
@@ -350,4 +460,37 @@ body {
   .feature__card{
     width: 90%;
   }
+
+  .customer__suppport__and__expert__assistance{
+    height:fit-content;
+  }
+  .customer__support,
+.expert__assitance{
+  flex-direction: column;
+}
+
+.customer__support svg,
+.expert__assitance svg{
+  width: 90%;
+  height: 100%;
+}
+
+.expert__assitance svg{
+  order: 1;
+}
+.expert__assitance__text{
+  order: 2;
+}
+.customer__support__text,
+.expert__assitance__text{
+  width: 90%;
+}
+
+
+.our__member_card{
+  flex-direction: column;
+}
+.team__member_card{
+ width: 90%;
+}
 }
