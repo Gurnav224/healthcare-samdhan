@@ -443,7 +443,9 @@ body {
   transition: max-height 0.3s ease;
 }
 
-
+.default{
+  max-height: 180px;
+}
 
 .accordion-content p {
   margin: 15px 0;
