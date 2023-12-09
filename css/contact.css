@@ -1,0 +1,132 @@
+.contact__form{
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.get__in__touch{
+    width: 40%;
+    background-color:#eeee;
+    height:70%;
+    padding:2% 2.5% ;
+}
+
+.get__in__touch__text h1{
+    font-size: 2rem;
+    text-align: center;
+    color: #6c63ff;;
+    line-height: 3;
+    padding: 1rem 0.5rem;
+}
+
+.get__in__touch__text p{
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    line-height: 1.2;
+    padding: 1rem 0.5rem;
+    color: gray;
+}
+
+.contact__details{
+    padding: 1rem 0.5rem;
+}
+
+
+.contact__type{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+.contact__type i{
+    color: #6c63ff;;
+    font-size: 2rem;
+}
+.contact__type p{
+    text-align: left;
+    color: #030303; ;
+}
+.form__container{
+    width:55%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+form{
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color:#6c63ff;
+    height: 100%;
+}
+
+form label{
+    padding: 0.5rem 0;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+}
+
+form input,textarea,button{
+    width: 90%;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+
+form .submit__btn{
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background-color: #4037ef;;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+label,
+input,
+textarea{
+    display: block;
+
+}
+
+select{
+    padding: 0.8rem 0.5rem;
+    font-size: 1.1rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .contact__form{
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 15%;
+    }
+
+
+
+    .get__in__touch{
+        width: 90%;
+        height: fit-content;
+    }
+
+    .get__in__touch h1{
+        padding-top: 5rem;
+        line-height: 1;
+    }
+
+   .form__container{
+    width: 90%;
+   }
+   
+}
