@@ -40,6 +40,11 @@ body {
   font-weight: 700;
 }
 
+.navbar__container .logo h2 a{
+  text-decoration: none;
+  color: #4037ef;
+}
+
 .navList__container {
   display: flex;
   justify-content: space-evenly;
